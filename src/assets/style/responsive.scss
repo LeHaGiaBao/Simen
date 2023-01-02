@@ -1,0 +1,15 @@
+@mixin hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@mixin show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.topheader__right {
+    .icon__mobile {
+        display: none;
+    }
+}
