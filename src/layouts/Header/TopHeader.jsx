@@ -1,14 +1,12 @@
 import React from 'react'
-
 import en from '../../assets/image/en.jpg'
 import ru from '../../assets/image/ru.jpg'
 import bra from '../../assets/image/bra.jpg'
 import fr from '../../assets/image/fr.jpg'
-
 import {BiUser} from 'react-icons/bi'
 import {FiHeart} from 'react-icons/fi'
 import {BsCheck2Square} from 'react-icons/bs'
-import {GrKey} from 'react-icons/gr'
+import {IoKey} from 'react-icons/io5'
 import {FiAnchor} from 'react-icons/fi'
 
 function TopHeader() {
@@ -127,7 +125,7 @@ const TopHeaderRight = () => {
 		},
 		{
 			id: 4,
-			icon: <GrKey />,
+			icon: <IoKey />,
 			content: 'Login',
 		},
 	]

@@ -141,5 +141,169 @@ $topheader-height: 40px;
                 }
             }
         }
+
+        .bot-header {
+            margin: 40px 0;
+            .botheader {
+                .sns-icon-box {
+                    cursor: pointer;
+
+                    &::after {
+                        display: table;
+                        content: "";
+                        clear: both;
+                    }
+
+                    &:hover {
+                        i {
+                            color: #FFF !important;
+                            .sns-icon-left::after {
+                                height: 40px;
+                            }
+                        }
+                    }
+                    
+                    .sns-icon-left {
+                        width: 40px;
+                        height: 40px;
+                        background-color: #EAEAEA;
+                        border-radius: 100%;
+                        justify-content: center;
+                        position: relative;
+                        overflow: hidden;
+                        margin-right: 5px;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 0;
+                            left: 0;
+                            bottom: 0;
+                            background: #E34444;
+                            -webkit-transition: all 0.3s ease;
+                            transition: all 0.3s ease;
+                            -moz-transition: all 0.3s ease;
+                            -ms-transition: all 0.3s ease;
+                            -o-transition: all 0.3s ease;
+                            z-index: 2;
+                        }
+
+                        i {
+                            margin-top: 2px;
+                            width: 12px;
+                            color: #333;
+                            z-index: 3;
+                            transition: all 0.3s ease;
+                        }
+                    }
+
+                    .sns-icon-right-content {
+                        h4 {
+                            margin: 0;
+                        }
+                        span {
+                            pointer-events: none;
+                            cursor: text;
+                        }
+                    }
+                }
+            }
+        }
+        
     }
+}
+
+.switch-language {
+    margin-right: 15px;
+    &::before {
+        content: "";
+        width: 1px;
+        height: 10px;
+        background-color: rgba(136, 136, 136, 0.2);
+        position: absolute;
+        right: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.switch-currency::after,
+.switch-language::after {
+    @include hidden;
+    top: 15px;
+    left: 40px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: #fff;
+    border-width: 8px;
+    margin-left: -5px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+
+.switch-currency:hover::after,
+.switch-language:hover::after {
+    @include show;
+}
+
+.currency__list,
+.language__list {
+    @include hidden;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    z-index: 1;
+}
+
+.switch-currency:hover .currency__list,
+.switch-language:hover .language__list {
+    @include show;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes horizontal {
+    0% {
+        transform: translateX(0);
+    }
+    7% {
+        transform: translateX(4px);
+    }
+    14% {
+        transform: translateX(0px);
+    }
+    21% {
+        transform: translateX(4px);
+    }
+    28% {
+        transform: translateX(0px);
+    }
+    35% {
+        transform: translateX(4px);
+    }
+    42%,
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.show {
+    @include show
 }
