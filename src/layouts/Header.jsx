@@ -1,7 +1,7 @@
 import React from 'react'
-import TopHeader from './Header/TopHeader'
-import BotHeader from './Header/BotHeader'
-import HeaderMenu from './Header/HeaderMenu'
+import TopHeader from '../components/Header/TopHeader'
+import BotHeader from '../components/Header/BotHeader'
+import HeaderMenu from '../components/Header/HeaderMenu'
 
 function Header() {
 	return (
