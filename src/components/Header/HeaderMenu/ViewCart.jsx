@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import './ViewCart.scss'
 import {useDispatch, useSelector} from 'react-redux'
-import {getTotals, removeFromCart} from '../../../redux/cartSlice'
+import {getTotals, removeFromCart} from '../../../redux/Slice/cartSlice'
 import {IoMdCart} from 'react-icons/io'
 
 function ViewCart() {

@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import Footer from '../../layouts/Footer'
 import Header from '../../layouts/Header'
 import './PageNotFound.scss'
 
@@ -19,6 +20,7 @@ function PageNotFound() {
 					</Link>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	)
 }
