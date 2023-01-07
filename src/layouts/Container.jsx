@@ -4,9 +4,7 @@ import ImagesAndAnimations from '../containers/ImagesAndAnimations/ImagesAndAnim
 function Container() {
 	return (
 		<div className='container'>
-			<div className='grid wide'>
-				<ImagesAndAnimations />
-			</div>
+			<div className='grid wide'>{/* <ImagesAndAnimations /> */}</div>
 		</div>
 	)
 }

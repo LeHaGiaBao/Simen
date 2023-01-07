@@ -15,14 +15,12 @@
     z-index: 1;
     width: 300px;
     min-height: 100px;
-    background-color: #fff;
-    border: 1px solid #eaeaea;
+    background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
     border-radius: 2px;
-    box-shadow: -1px 1px 2px #666;
+    box-shadow: -1px 1px 2px #666666;
     transition: all 0.4s ease-in;
-
     @include hidden;
-
     .empty {
         >span {
             display: block;
@@ -51,7 +49,7 @@
 
     &::after {
         border-color: rgba(255, 255, 255, 0);
-        border-bottom-color: #fff;
+        border-bottom-color: #FFFFFF;
         border-width: 15px;
         margin-left: 0px;
         margin-top: 3px;
@@ -59,7 +57,7 @@
 
     &::before {
         border-color: rgba(234, 234, 234, 0);
-        border-bottom-color: #eaeaea;
+        border-bottom-color: #EAEAEA;
         border-width: 17px;
         margin-left: -2px;
     }
@@ -81,38 +79,32 @@
     max-height: 300px;
     overflow-y: scroll;
     padding: 15px;
-
     .item {
         display: flex;
         margin-bottom: 10px;
-
         &__image {
             img {
                 height: 100px;
                 width: 80px;
                 border: 1px solid;
-                border-color: #eaeaea;
+                border-color: #EAEAEA;
                 cursor: pointer;
                 transition: all 0.3s ease;
-
                 &:hover {
                     border-color: #e34444;
                 }
             }
         }
-
         &__infor {
             margin-left: 10px;
             span {
                 display: block;
             }
-
             .item__price {
                 font-weight: 800;
-                color: #333;
+                color: #333333;
             }
         }
-
         &__remove {
             margin-left: auto;
         }
@@ -123,9 +115,8 @@
     >i {
         cursor: pointer;
         transition: all 0.3s ease;
-        
         &:hover {
-            color: #e34444
+            color: #E34444
         }
     }
 }
@@ -134,13 +125,11 @@
     display: flex;
     justify-content: space-between;
     padding: 10px 15px;
-    border-top: 1px solid #eaeaea;
-    border-bottom: 1px solid #eaeaea;
-
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
     .total {
         font-size: 1.5rem;
     }
-
     .price {
         color: #333;
         font-weight: 800;
