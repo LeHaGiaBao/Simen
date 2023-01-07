@@ -12,8 +12,8 @@ function Footer() {
 				<div class='grid wide'>
 					<div class='last-footer__container v-center'>
 						<span>
-							© 2015 Ecommerce software by Wordpress™ Designed by
-							SNSTheme.Com
+							© 2023 Ecommerce software by Wordpress™ Developed by
+							Bao Le Ha Gia
 						</span>
 						<img src={logo7} alt='logo' />
 					</div>
