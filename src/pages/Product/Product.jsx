@@ -4,13 +4,13 @@ import BrandLogo from '../../layouts/BrandLogo/BrandLogo'
 import Footer from '../../layouts/Footer'
 import BackToTop from 'react-back-to-top-button'
 import {FaAngleUp} from 'react-icons/fa'
-import Content from '../../theme/Content/Content'
+import ProductItem from '../../theme/Product/ProductItem'
 
-function Home() {
+function Product() {
 	return (
 		<div>
 			<Header />
-			<Content />
+			<ProductItem />
 			<BrandLogo />
 			<Footer />
 			<BackToTop showAt={100} speed={500}>
@@ -22,4 +22,4 @@ function Home() {
 	)
 }
 
-export default Home
+export default Product

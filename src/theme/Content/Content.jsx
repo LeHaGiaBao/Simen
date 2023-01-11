@@ -1,5 +1,5 @@
 import React from 'react'
-import NewProduct from '../containers/NewProduct'
+import NewProduct from '../../containers/Content/NewProduct'
 
 function Content() {
 	return (
