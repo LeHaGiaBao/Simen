@@ -25,7 +25,7 @@ const SubMenuItem = ({id, props}) => {
 				'sub-menu__item--static': list || listImages,
 			})}>
 			<NavLink
-				to={`/React-simen-demo${isHomePage ? '' : '/' + name.toLowerCase()}`}
+				to={`${isHomePage ? '' : '/' + name.toLowerCase()}`}
 				exact={isHomePage}
 				activeClassName='sub-menu__item__link--active'
 				className={classNames('sub-menu__item__link', {
@@ -37,9 +37,7 @@ const SubMenuItem = ({id, props}) => {
 				<ul className='sub-menu__item__children sub-menu__item__children--col-1'>
 					{items.map(({id, item}) => (
 						<li className='col-1__item' key={id}>
-							<Link
-								to='/React-simen-demo/no-content'
-								className='col-1__item__link'>
+							<Link to='/no-content' className='col-1__item__link'>
 								{item}
 							</Link>
 						</li>
@@ -64,9 +62,7 @@ const SubMenuItem = ({id, props}) => {
 							})}
 						{imageLink && (
 							<div className={classNames(colClass)}>
-								<Link
-									to='/React-simen-demo/no-content'
-									className='image-link'>
+								<Link to='/no-content' className='image-link'>
 									<img src={img11} alt='' />
 								</Link>
 							</div>
@@ -106,10 +102,10 @@ const TitleAndItems = ({title, items}) => {
 const ImageContent = ({img, title, content}) => {
 	return (
 		<>
-			<Link to='/React-simen-demo/no-content' className='image'>
+			<Link to='/no-content' className='image'>
 				<img src={img} alt='' />
 			</Link>
-			<Link to='/React-simen-demo/no-content' className='title'>
+			<Link to='/no-content' className='title'>
 				{title}
 			</Link>
 			<span className='content'>{content}</span>
@@ -120,7 +116,7 @@ const ImageContent = ({img, title, content}) => {
 const Item = ({item}) => {
 	return (
 		<li className='item'>
-			<Link to='/React-simen-demo/no-content' className='link'>
+			<Link to='/no-content' className='link'>
 				{item}
 			</Link>
 		</li>

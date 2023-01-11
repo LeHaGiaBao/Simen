@@ -67,9 +67,7 @@ function NavsubMenuItem(props) {
 		<div className='navsub-menu__item'>
 			<div className='navsub-menu__item__title'>
 				<NavLink
-					to={`/React-simen-demo${
-						isHomePage ? '' : '/' + title.toLowerCase()
-					}`}
+					to={`/${isHomePage ? '' : '/' + title.toLowerCase()}`}
 					exact={isHomePage}
 					onClick={onClick}>
 					{title}
@@ -130,7 +128,7 @@ function NavsubMenuChildren1Item(props) {
 	return (
 		<div className='navsub-menu__children-1__item'>
 			<div className='navsub-menu__children-1__title navsub-menu__item__title'>
-				<Link to='/React-simen-demo/no-content'>{title1}</Link>
+				<Link to='/no-content'>{title1}</Link>
 				{children2.length > 0 && (
 					<button
 						className={classNames('btn__open-close', {
@@ -155,7 +153,7 @@ function NavsubMenuChildren2Title(props) {
 	const {title2} = props
 	return (
 		<div className='navsub-menu__children-2__title navsub-menu__item__title'>
-			<Link to='/React-simen-demo/no-content'>{title2}</Link>
+			<Link to='/no-content'>{title2}</Link>
 		</div>
 	)
 }
