@@ -1,16 +1,16 @@
 import React from 'react'
 import Header from '../../layouts/Header'
-import ContentItem from '../../theme/Content/ContentItem'
+import FurnitureItem from '../../theme/Furniture/FurnitureItem'
 import BrandLogo from '../../layouts/BrandLogo/BrandLogo'
 import Footer from '../../layouts/Footer'
 import BackToTop from 'react-back-to-top-button'
 import {FaAngleUp} from 'react-icons/fa'
 
-function Home() {
+function Furniture() {
 	return (
 		<div>
 			<Header />
-			<ContentItem />
+			<FurnitureItem />
 			<BrandLogo />
 			<Footer />
 			<BackToTop showAt={100} speed={500}>
@@ -22,4 +22,4 @@ function Home() {
 	)
 }
 
-export default Home
+export default Furniture

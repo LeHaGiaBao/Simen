@@ -1,7 +1,7 @@
 import React from 'react'
 import NewProduct from '../../containers/Content/NewProduct'
 
-function Content() {
+function ContentItem() {
 	return (
 		<div className='container'>
 			<div className='grid wide'>
@@ -11,4 +11,4 @@ function Content() {
 	)
 }
 
-export default Content
+export default ContentItem
