@@ -7,7 +7,7 @@ import {useDispatch} from 'react-redux'
 import {addQuantityItem} from '../../redux/Slice/cartSlice'
 import {toast} from 'react-toastify'
 import ReactImageMagnify from 'react-image-magnify'
-import ProductRating from '../../containers/Product/ProductRating'
+import ProductRating from '../../components/ProductRating/ProductRating'
 import PageNotFound from '../../pages/PageNotFound/PageNotFound'
 
 function ProductItem() {
