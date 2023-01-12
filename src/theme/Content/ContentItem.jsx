@@ -13,7 +13,9 @@ import Products from '../../containers/Product/Products'
 import ProductItems from '../../containers/Product/ProductItems'
 import NewProduct from '../../containers/Content/NewProduct'
 import NavSuggest from '../../containers/Product/NavSuggest'
+import AdversImages from '../../containers/Content/AdversImages'
 import MostViewed from '../../containers/Content/MostViewed'
+import LatestPost from '../../containers/Content/LatestPost'
 
 function ContentItem() {
 	return (
@@ -25,8 +27,10 @@ function ContentItem() {
 				</Products>
 				<NewProduct />
 				<Products navProducts={navProducts2}>
-					<NavSuggest products={products} titles={titles} />
+					{/* <NavSuggest products={products} titles={titles} /> */}
+					<AdversImages imgs={adversImages} />
 					{/* <MostViewed props={productMostViewed} /> */}
+					{/* <LatestPost props={productLatestPost} /> */}
 				</Products>
 			</div>
 		</div>
