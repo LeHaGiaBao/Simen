@@ -2,17 +2,17 @@ import React, {useRef, useEffect, forwardRef} from 'react'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import 'swiper/css'
 import SwiperCore, {Pagination, Navigation} from 'swiper'
-import ProductRating from '../../components/ProductRating/ProductRating'
-import ScrollButtons from '../../components/ScrollButtons/ScrollButtons'
+import classNames from 'classnames'
 import {useDispatch} from 'react-redux'
 import {addToCart} from '../../redux/Slice/cartSlice'
-import classNames from 'classnames'
 import {Link} from 'react-router-dom'
+import ScrollButtons from '../../components/ScrollButtons/ScrollButtons'
+import ProductRating from '../../components/ProductRating/ProductRating'
 import {FaShoppingCart} from 'react-icons/fa'
 
 SwiperCore.use([Pagination, Navigation])
 
-function MostViewed(props) {
+const MostViewed = ({props}) => {
 	const ref1 = useRef(null)
 	const ref2 = useRef(null)
 	const swiperRef = useRef(null)

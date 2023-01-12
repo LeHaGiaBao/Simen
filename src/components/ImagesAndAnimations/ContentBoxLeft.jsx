@@ -6,7 +6,7 @@ function ContentBoxLeft() {
 	const [bulletIndex, setBulletIndex] = useState(0)
 
 	const numberBullet = [...Array(3).keys()]
-	const numberImagesSplit = [...Array(5).keys]
+	const numberImagesSplit = [...Array(5).keys()]
 
 	const refs = useRef(
 		[...new Array(3)].map(() =>
@@ -37,8 +37,10 @@ function ContentBoxLeft() {
 			})
 		})
 		return () => clearInterval(interval)
+		// eslint-disable-next-line
 	}, [])
 
+	// Animation when change BulletIndex
 	useEffect(() => {
 		numberBullet.forEach((index) => {
 			numberImagesSplit.forEach((id) => {
@@ -52,9 +54,7 @@ function ContentBoxLeft() {
 		})
 	}, [bulletIndex])
 
-	const handleClick = (id) => {
-		setBulletIndex(id)
-	}
+	const handleClick = (id) => setBulletIndex(id)
 
 	return (
 		<div className='content-box-left col xlg-6 lg-6 md-6 sm-12 xsm-12'>

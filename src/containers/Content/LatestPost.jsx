@@ -7,7 +7,7 @@ import ScrollButtons from '../../components/ScrollButtons/ScrollButtons'
 
 SwiperCore.use([Pagination, Navigation])
 
-function LatestPost(props) {
+function LatestPost({props}) {
 	const ref1 = useRef(null)
 	const ref2 = useRef(null)
 	const swiperRef = useRef(null)

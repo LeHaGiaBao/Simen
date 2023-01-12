@@ -21,16 +21,16 @@ function ContentItem() {
 	return (
 		<div className='container'>
 			<div className='grid wide'>
-				{/* <ImagesAndAnimations /> */}
+				<ImagesAndAnimations />
 				<Products navProducts={navProducts1}>
 					<ProductItems products={products} />
 				</Products>
 				<NewProduct />
 				<Products navProducts={navProducts2}>
-					{/* <NavSuggest products={products} titles={titles} /> */}
+					<NavSuggest products={products} titles={titles} />
 					<AdversImages imgs={adversImages} />
-					{/* <MostViewed props={productMostViewed} /> */}
-					{/* <LatestPost props={productLatestPost} /> */}
+					<MostViewed props={productMostViewed} />
+					<LatestPost props={productLatestPost} />
 				</Products>
 			</div>
 		</div>
