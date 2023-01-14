@@ -1,6 +1,6 @@
 import React, {memo} from 'react'
 import {animated, useTrail} from '@react-spring/web'
-import {Product} from '../../containers/Product/Product'
+import Product from '../../containers/Product/Product'
 
 const ProductsGrid = ({listProducts}) => {
 	const trail = useTrail(listProducts.length, {
