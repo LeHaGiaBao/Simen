@@ -3,6 +3,7 @@ import Home from '../pages/Home/Home'
 import PageNotFound from '../pages/PageNotFound/PageNotFound'
 import Product from '../pages/Product/Product'
 import Furniture from '../pages/Furniture/Furniture'
+import CoffeeTables from '../pages/CoffeeTables/CoffeeTables'
 
 const routes = createBrowserRouter([
 	{
@@ -17,6 +18,10 @@ const routes = createBrowserRouter([
 	{
 		path: '/furniture',
 		element: <Furniture />,
+	},
+	{
+		path: '/coffee-tables',
+		element: <CoffeeTables />,
 	},
 ])
 
