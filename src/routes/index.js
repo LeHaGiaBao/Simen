@@ -4,6 +4,7 @@ import PageNotFound from '../pages/PageNotFound/PageNotFound'
 import Product from '../pages/Product/Product'
 import Furniture from '../pages/Furniture/Furniture'
 import CoffeeTables from '../pages/CoffeeTables/CoffeeTables'
+import Sofas from '../pages/Sofas/Sofas'
 
 const routes = createBrowserRouter([
 	{
@@ -22,6 +23,10 @@ const routes = createBrowserRouter([
 	{
 		path: '/coffee-tables',
 		element: <CoffeeTables />,
+	},
+	{
+		path: '/sofas',
+		element: <Sofas />,
 	},
 ])
 

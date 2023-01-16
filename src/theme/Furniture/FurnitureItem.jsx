@@ -1,17 +1,15 @@
 import React from 'react'
-import NavbarPage from '../../containers/Furniture/NavbarPage'
+import NavbarPage from '../../containers/NavbarPage/NavbarPage'
 import products from '../../utils/product'
 import {furnitureCoverImg} from '../../utils/image'
 
 function FurnitureItem() {
 	return (
-		<>
-			<NavbarPage
-				namePage='Furniture'
-				products={products}
-				imgCover={furnitureCoverImg}
-			/>
-		</>
+		<NavbarPage
+			namePage='Furniture'
+			products={products}
+			imgCover={furnitureCoverImg}
+		/>
 	)
 }
 
