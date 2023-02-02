@@ -1,6 +1,7 @@
 import React from 'react'
 import './PriceFilter.scss'
 import Slider from 'rc-slider'
+import 'rc-slider/assets/index.css'
 import FilterButton from '../FilterButton/FilterButton'
 
 const createSliderWithTooltip = Slider.createSliderWithTooltip
