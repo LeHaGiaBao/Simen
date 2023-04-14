@@ -26,7 +26,7 @@ function ViewCart() {
 				<i className='fas fa-shopping-cart'>
 					<IoMdCart />
 				</i>
-				<span className='cart__number'>{cartQuantity}</span>
+				<span className='cart__number'>{cartQuantity}</span> ( items )
 				<div className='view-cart'>
 					{cartQuantity === 0 ? (
 						<div className='empty'>
