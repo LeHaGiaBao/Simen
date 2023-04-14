@@ -18,7 +18,7 @@ function HeaderMenuRight() {
 						<button type='submit'>SEARCH</button>
 					</form>
 				</div>
-				<ViewCart />
+				{/* <ViewCart /> */}
 			</div>
 		</div>
 	)

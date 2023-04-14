@@ -4,7 +4,7 @@ import './assets/style/grid.css'
 import './assets/style/style.scss'
 import './assets/style/responsive.scss'
 import {RouterProvider} from 'react-router-dom'
-import {routes} from './routes/index'
+import {routes} from './routes/routes'
 
 function App() {
 	return (

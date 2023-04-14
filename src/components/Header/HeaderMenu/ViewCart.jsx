@@ -3,12 +3,13 @@ import './ViewCart.scss'
 import {useDispatch, useSelector} from 'react-redux'
 import {getTotals, removeFromCart} from '../../../redux/Slice/cartSlice'
 import {IoMdCart} from 'react-icons/io'
+import {FaTrashAlt} from 'react-icons/fa'
 
 function ViewCart() {
 	const carts = useSelector((state) => state.carts)
+	console.log(carts)
 	const cartQuantity = carts.cartTotalQuantity
 	const cartTotalAmount = carts.cartTotalAmount
-
 	const dispatch = useDispatch()
 
 	const handleClick = (item) => {
@@ -51,7 +52,9 @@ function ViewCart() {
 										<div
 											className='item__remove'
 											onClick={() => handleClick(item)}>
-											<i className='fas fa-trash-alt' />
+											<i className='fas fa-trash-alt'>
+												<FaTrashAlt />
+											</i>
 										</div>
 									</div>
 								))}

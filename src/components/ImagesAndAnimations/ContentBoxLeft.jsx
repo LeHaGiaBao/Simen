@@ -37,7 +37,6 @@ function ContentBoxLeft() {
 			})
 		})
 		return () => clearInterval(interval)
-		// eslint-disable-next-line
 	}, [])
 
 	// Animation when change BulletIndex

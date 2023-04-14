@@ -10,7 +10,10 @@ import {
 	logo6Img,
 } from '../../utils/image'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import 'swiper/css'
+import 'swiper/swiper.min.css'
+import 'swiper/components/pagination/pagination.min.css'
+import 'swiper/components/navigation/navigation.min.css'
+
 import SwiperCore, {Pagination, Navigation} from 'swiper'
 
 SwiperCore.use([Pagination, Navigation])
@@ -85,9 +88,7 @@ function BrandLogo() {
 						className='mySwiper'>
 						{logo.map(({id, img}) => (
 							<SwiperSlide key={id}>
-								<Link
-									to='/React-simen-demo/logo'
-									className='donor-logo__item col'>
+								<Link to='/logo' className='donor-logo__item col'>
 									<img src={img} alt='' />
 								</Link>
 							</SwiperSlide>

@@ -25,10 +25,7 @@ const Product = forwardRef(({id, isSale, img, name, oldPrice, newPrice, rating},
 	return (
 		<div className={classNames('product', {'product--sale': isSale})}>
 			<div className='product-img-info' style={styles}>
-				<Link
-					to={`/React-simen-demo/product/${id}`}
-					className='product__link'
-					ref={ref}>
+				<Link to={`/product/${id}`} className='product__link' ref={ref}>
 					<img src={img} className='product__img' alt='' />
 					<div className='product__sale'>SALE!</div>
 				</Link>
@@ -61,7 +58,7 @@ const Product = forwardRef(({id, isSale, img, name, oldPrice, newPrice, rating},
 					</div>
 				</div>
 			</div>
-			<Link to={`/React-simen-demo/product/${id}`} className='product__name'>
+			<Link to={`/product/${id}`} className='product__name'>
 				{name}
 			</Link>
 			<div className='product__price'>

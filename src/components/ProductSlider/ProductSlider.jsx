@@ -1,7 +1,11 @@
 import React, {useEffect, useRef} from 'react'
 import './ProductSlider.scss'
 import {Swiper, SwiperSlide} from 'swiper/react'
-import 'swiper/css'
+
+import 'swiper/swiper.min.css'
+import 'swiper/components/pagination/pagination.min.css'
+import 'swiper/components/navigation/navigation.min.css'
+
 import SwiperCore, {Pagination, Navigation} from 'swiper'
 import {animated, useTrail} from '@react-spring/web'
 import Product from '../../containers/Product/Product'
