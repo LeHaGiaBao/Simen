@@ -6,7 +6,7 @@ function HeaderMenuRight() {
 	return (
 		<div className='header__menu__right v-center'>
 			<div className='header__menu__right__search'>
-				<i>
+				<i className='fa fa-search'>
 					<IoSearch />
 				</i>
 				<div className='search__content'>
@@ -18,8 +18,8 @@ function HeaderMenuRight() {
 						<button type='submit'>SEARCH</button>
 					</form>
 				</div>
-				<ViewCart />
 			</div>
+			<ViewCart />
 		</div>
 	)
 }

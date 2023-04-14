@@ -23,7 +23,7 @@ function ViewCart() {
 	return (
 		<div className='header__menu__right__cart'>
 			<div className='mycart'>
-				<i>
+				<i className='fas fa-shopping-cart'>
 					<IoMdCart />
 				</i>
 				<span className='cart__number'>{cartQuantity}</span>
