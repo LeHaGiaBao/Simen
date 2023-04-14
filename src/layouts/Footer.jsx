@@ -3,6 +3,8 @@ import FooterMenu from '../components/Footer/FooterMenu'
 import logo7 from '../assets/image/logo7.png'
 
 function Footer() {
+	let year = new Date().getFullYear()
+
 	return (
 		<footer className='footer'>
 			<div className='grid wide'>
@@ -11,7 +13,10 @@ function Footer() {
 			<div class='last-footer'>
 				<div class='grid wide'>
 					<div class='last-footer__container v-center'>
-						<span>© 2023 Ecommerce website by Wordpress™</span>
+						<span>
+							© {year} Ecommerce software by Wordpress™ Designed by
+							SNSTheme.Com
+						</span>
 						<img src={logo7} alt='logo' />
 					</div>
 				</div>
