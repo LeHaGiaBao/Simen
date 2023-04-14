@@ -13,7 +13,7 @@ function AddToCart({product}) {
 
 	return (
 		<div className='add-to-cart-wrap' onClick={handleClick}>
-			<i>
+			<i className='fas fa-shopping-cart'>
 				<FaShoppingCart />
 			</i>{' '}
 			ADD TO CART

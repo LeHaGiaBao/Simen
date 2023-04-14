@@ -4,6 +4,10 @@ import {addToCart} from '../../redux/Slice/cartSlice'
 import classNames from 'classnames'
 import {Link} from 'react-router-dom'
 import ProductRating from '../../components/ProductRating/ProductRating'
+import {IoMdCart} from 'react-icons/io'
+import {AiFillHeart} from 'react-icons/ai'
+import {FaRandom} from 'react-icons/fa'
+import {BsEyeFill} from 'react-icons/bs'
 
 const Product = forwardRef(({id, isSale, img, name, oldPrice, newPrice, rating}, ref) => {
 	const [isHover, setIsHover] = useState(false)
@@ -31,28 +35,37 @@ const Product = forwardRef(({id, isSale, img, name, oldPrice, newPrice, rating},
 				</Link>
 				<div className='item-box-hover'>
 					<div className='cart-wrap' onClick={handleClick}>
-						<i className='fas fa-shopping-cart'></i> ADD TO CART
+						<i className='fas fa-shopping-cart'>
+							<IoMdCart />
+						</i>{' '}
+						ADD TO CART
 					</div>
 					<div className='box-inner v-center'>
 						<span
 							className='box-inner__item wishlist'
 							onMouseOver={handleOnMouseOver}
 							onMouseOut={handleOnMouseOut}>
-							<i className='fas fa-heart'></i>
+							<i className='fas fa-heart'>
+								<AiFillHeart />
+							</i>
 							<div className='icon-script'>Add to Wishlist</div>
 						</span>
 						<span
 							className='box-inner__item compare'
 							onMouseOver={handleOnMouseOver}
 							onMouseOut={handleOnMouseOut}>
-							<i className='fas fa-random'></i>
+							<i className='fas fa-random'>
+								<FaRandom />
+							</i>
 							<div className='icon-script'>Compare</div>
 						</span>
 						<span
 							className='box-inner__item view'
 							onMouseOver={handleOnMouseOver}
 							onMouseOut={handleOnMouseOut}>
-							<i className='fas fa-eye'></i>
+							<i className='fas fa-eye'>
+								<BsEyeFill />
+							</i>
 							<div className='icon-script'>Quick View</div>
 						</span>
 					</div>

@@ -34,7 +34,6 @@ const cart = createSlice({
 			}
 			localStorage.setItem('cartItems', JSON.stringify(state.cartItems))
 		},
-
 		addQuantityItem: (state, action) => {
 			const itemIndex = state.cartItems.findIndex(
 				(item) => item.id === action.payload.productItem.id
@@ -62,7 +61,6 @@ const cart = createSlice({
 			}
 			localStorage.setItem('cartItems', JSON.stringify(state.cartItems))
 		},
-
 		removeFromCart: (state, action) => {
 			const nextCartItems = state.cartItems.filter(
 				(cartItem) => cartItem.id !== action.payload.id
@@ -73,7 +71,6 @@ const cart = createSlice({
 			})
 			localStorage.setItem('cartItems', JSON.stringify(state.cartItems))
 		},
-
 		getTotals: (state, action) => {
 			let {total, quantity} = state.cartItems.reduce(
 				(cartTotal, cartItem) => {
